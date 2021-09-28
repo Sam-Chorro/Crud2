@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    tools:context="com.itca.crud2.ConsultaSpinner">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Seleccione opcion"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold"
+
+        />
+
+    <Spinner
+        android:id="@+id/sp_options"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white"
+        android:drawSelectorOnTop="true"
+        android:outlineAmbientShadowColor="@color/black"
+        android:paddingLeft="15dp"
+        android:spinnerMode="dropdown" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_codigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:text="Codigo: "
+            android:textColor="@color/mycolor1"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:text="Descripcion: "
+            android:textColor="@color/white"
+            android:textSize="28dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:text="Precio: "
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            />
+
+        <Button
+            android:layout_marginTop="40sp"
+            android:paddingVertical="22sp"
+            app:cornerRadius="22sp"
+            android:backgroundTint="#68ED16"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_baseline_home_24"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:onClick="back"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
